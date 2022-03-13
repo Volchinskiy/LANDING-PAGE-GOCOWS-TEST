@@ -1,0 +1,272 @@
+@import 'components/normalize';
+@import 'components/font';
+@import 'components/variables';
+@import 'components/templates';
+
+// SETTINGS
+@import 'components/settings';
+
+// SCROLL BAR
+@import 'components/scrollBar';
+
+// HEADER
+@import 'components/header';
+
+// SLIDER
+@import 'components/slider';
+
+// SECOND BLOCK
+.second-block {
+ width: 100%;
+}
+
+.second-block__sub-tittle {
+ @extend %subTittle;
+ margin: 55px 0px 30px 0px;
+}
+
+.second-block__tittle {
+ @extend %tittle;
+ margin: 35px 0px 35px 0px;
+}
+
+.second-block__text {
+ @extend %text;
+}
+
+// THIRD BLOCK
+.third-block {
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ margin: 80px 0px 100px 0px;
+}
+
+.third-block__content-wrapper {
+ width: 45%;
+ margin: 80px 0px 0px 0px;
+}
+
+.third-block__img {
+ width: 100%;
+ height: 50%;
+ object-fit: cover;
+}
+
+.third-block__sub-tittle {
+ @extend %subTittle;
+ margin: 25px 0px 25px 0px;
+}
+
+.third-block__tittle {
+ @extend %tittle;
+ font-size: calc(20px + 10 * (100vw / 2650));
+ margin: 25px 0px 25px 0px;
+}
+
+.third-block__text {
+ @extend %text;
+ font-size: calc(12px + 3 * (100vw / 2650));
+}
+
+// FOURTH BLOCK
+.fourth-block {
+ width: 100%;
+ height: 290px;
+ background-color: $color3;
+}
+
+.fourth-block__content-wrapper {
+ height: 100%;
+
+ padding: 30px 0px 30px 0px;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.fourth-block__tittle {
+ @extend %tittle;
+}
+
+.fourth-block__form {
+ width: 340px;
+ height: 50px;
+ border-bottom: 2px solid #000;
+ display: flex;
+ justify-content: flex-end;
+}
+
+.fourth-block__input {
+ width: 79%;
+ height: 50px;
+
+ border: 0;
+ background-color: $color3;
+ border-bottom: 2px solid #000;
+
+ outline: none;
+}
+
+.fourth-block__button {
+ height: 50px;
+ width: 19%;
+
+ border: 0;
+ background-color: $color3;
+ border-bottom: 2px solid #000;
+ font-size: 30px;
+ transition: all 0.3s;
+ &:hover {
+  color: $color2;
+ }
+}
+
+// FIFTH BLOCK
+.fifth-block {
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ margin: 80px 0px 100px 0px;
+}
+
+.fifth-block__content-wrapper {
+ width: 45%;
+ margin: 80px 0px 0px 0px;
+}
+
+.fifth-block__img {
+ width: 100%;
+ height: 50%;
+ object-fit: cover;
+}
+
+.fifth-block__sub-tittle {
+ @extend %subTittle;
+ margin: 25px 0px 25px 0px;
+}
+
+.fifth-block__tittle {
+ @extend %tittle;
+ font-size: calc(20px + 10 * (100vw / 2650));
+ margin: 25px 0px 25px 0px;
+}
+
+.fifth-block__text {
+ @extend %text;
+ font-size: calc(12px + 3 * (100vw / 2650));
+}
+
+.fifth-block__button-wrapper {
+ width: 100%;
+ height: 60px;
+
+ margin: 0px 0px 150px 0px;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.fifth-block__button {
+ width: 160px;
+ height: 50px;
+ border: 1px solid #000;
+
+ background-color: #fff;
+
+ font-size: 20px;
+ font-family: 'PlayfairDisplay';
+ font-weight: 400;
+ color: #626262;
+ transition: all 0.3s;
+ &:hover {
+  background-color: #626262;
+  color: #fff;
+  border: 1px solid #626262;
+ }
+}
+
+// FOOTER
+@import 'components/footer';
+
+// MEDIA
+@media (max-width: 1023px) {
+ // THIRD BLOCK
+ .third-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .third-block__content-wrapper {
+  width: 70%;
+  margin: 40px 0px 0px 0px;
+ }
+
+ .third-block__sub-tittle {
+  margin: 10px 0px 10px 0px;
+ }
+
+ .third-block__tittle {
+  margin: 10px 0px 10px 0px;
+ }
+
+ // FIFTH BLOCK
+ .fifth-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .fifth-block__content-wrapper {
+  width: 70%;
+  margin: 40px 0px 0px 0px;
+ }
+
+ .fifth-block__sub-tittle {
+  margin: 10px 0px 10px 0px;
+ }
+
+ .fifth-block__tittle {
+  margin: 10px 0px 10px 0px;
+ }
+}
+
+@media (max-width: 767px) {
+ // THIRD BLOCK
+ .third-block {
+  margin: 0px 0px 70px 0px;
+ }
+
+ // FIFTH BLOCK
+ .fifth-block {
+  margin: 0px 0px 70px 0px;
+ }
+}
+
+@media (max-width: 426px) {
+ // THIRD BLOCK
+ .third-block__content-wrapper {
+  width: 100%;
+ }
+
+ // FIFTH BLOCK
+ .fifth-block__content-wrapper {
+  width: 100%;
+ }
+
+ // FOURTH BLOCK
+ .fourth-block__form {
+  width: 260px;
+ }
+}
+
+// MODIFICATOR
+@import 'components/modificator.scss';

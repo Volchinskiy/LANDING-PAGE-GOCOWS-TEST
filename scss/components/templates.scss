@@ -1,0 +1,22 @@
+%tittle {
+ font-family: 'PlayfairDisplay';
+ font-size: calc(20px + 20 * (100vw / 2650));
+ font-weight: 400;
+ text-align: start;
+ color: #626262;
+}
+
+%text {
+ font-family: 'PlayfairDisplay';
+ font-size: calc(13px + 3 * (100vw / 2650));
+ font-weight: 400;
+ color: #626262;
+}
+
+%subTittle {
+ font-family: 'Ubuntu-Light';
+ font-size: calc(13px + 3 * (100vw / 2650));
+ font-weight: 400;
+ text-transform: uppercase;
+ color: #b4ad9e;
+}

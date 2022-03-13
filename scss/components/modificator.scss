@@ -1,0 +1,44 @@
+.--strong-letter {
+ color: black;
+}
+
+.--menu-pressed {
+ visibility: visible;
+ opacity: 1;
+}
+
+.--overflow-hidden {
+ overflow: hidden;
+}
+
+.--height {
+ height: 100%;
+}
+
+.--popup-show {
+ opacity: 1;
+ visibility: visible;
+}
+
+.--menu-logo {
+ color: $color4;
+ font-size: 24px;
+ justify-content: flex-start;
+ padding: 0px 0px 0px 16px;
+}
+
+.--display-none {
+ display: none;
+}
+
+.--menu-button-hide {
+ top: -60px;
+}
+
+.--small-tittle {
+ font-size: calc(14px + 3 * (100vw / 2650));
+}
+
+.--small-sub-tittle {
+ font-size: calc(10px + 3 * (100vw / 2650));
+}
